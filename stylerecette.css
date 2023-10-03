@@ -29,10 +29,9 @@ div.category {
 /* Margin is top, right, bottom, left */
 div.content{
     background-color:white ;
-    margin: 60px 30% 80px 30%;
-    padding: 0px 70px 50px 70px;
+    margin: 60px 10% 40px 10%;
+    padding: 0px 10px 20px 10px;
     text-align: center;
-    min-width: 300px;
     box-shadow: 1px 1px 10px gray;
     overflow: visible;
 }
@@ -43,7 +42,7 @@ h1 {
 }
 
 p.description{
-    max-width: 400px;
+    max-width: 200px;
     display: inline-block;
     font-size: 15px;
 }
@@ -69,6 +68,7 @@ table.info {
     height: 11%; 
     color: white; 
     background-color: #BF9F9FC0;
+    font-size: 12px;
 
 }
 
@@ -89,7 +89,7 @@ img.infoImage{
 }
 
 div.column{
-    width: 45%;
+    width: 100%;
     margin-top: 15px;
 }
 
@@ -103,11 +103,11 @@ div.column h2{
 
 div.column1{
     display: inline-block;
-    margin-right: 10%;
+    /*margin-right: 10%;*/
 }
 
 div.column2{
-    float: right;
+    /*float: right;*/
     text-align: left;
 }
 
@@ -135,6 +135,7 @@ table.preparation p.numero{
 
 table.preparation td{
     vertical-align: top;
+    font-size: 10px;
 }
 
 table.preparation td.etape{
@@ -145,5 +146,44 @@ table.preparation td.etape{
 
 table.preparation tr{
     height: 40px;
+
+}
+
+/* For pc */
+@media only screen and (min-width: 768px) {
+
+    div.content{
+        margin: 60px 25% 80px 25%;
+        padding: 0px 70px 50px 70px;
+        min-width: 400px;
+    }
+
+    table.preparation td{
+        vertical-align: top;
+        font-size: 15px;
+    }
+
+    div.column{
+        width: 45%;
+    }
+
+    
+    div.column1{
+        margin-right: 10%;
+    }
+    
+    div.column2{
+        float: right;
+        text-align: left;
+    }
+
+    table.info {
+
+        font-size: 17px;
+    
+    }
+    
+}
+
 
 }
